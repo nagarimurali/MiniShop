@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aachi Mini shop</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./CSS/index.css" />
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="../CSS/email.css"> -->
+  </head>
+
+  <body>
+    <!--header section start  -->
+    <header class="header">
+      <a href="#" class="logo"
+        ><i style="color: #ff7800" class="fa-solid fa-mortar-pestle"></i
+        >Aachi</a
+      >
+      <nav class="navbar">
+        <a href="#Home">Home</a>
+        <a href="#Features">Features</a>
+        <a href="#Products">Products</a>
+        <a href="#categores">categores</a>
+        <a href="#Others">Others</a>
+        <a href="#Review">Review</a>
+      </nav>
+      <div id="toaster"></div>
+
+      <div class="icons">
+        <div class="fas fa-bars" id="list-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./images/aachi-Pepper-Powder.webp" alt="" />
+          <div class="content">
+            <h3>Termic</h3>
+            <span class="price">$50/-</span>
+            <span class="quantity">qty:1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <!-- <img src="./images/aachi-Mixed-Veg-Pickle-B1G1.webp" alt=""> -->
+          <img src="./images/aachi-Mixed-Veg-Pickle-B1G1.webp" alt="" />
+          <div class="content">
+            <h3>Termic</h3>
+            <span class="price">$65.5/-</span>
+            <span class="quantity">qty:1</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="./images/Biryani-Masala-powder.webp" alt="" />
+          <div class="content">
+            <h3>Termic</h3>
+            <span class="price">$40.5/-</span>
+            <span class="quantity">qty:1</span>
+          </div>
+        </div>
+        <div class="total">total:$156.00/-</div>
+        <a href="#" class="btn">check out</a>
+      </div>
+      <form action="" class="login-form">
+        <h3>Login Now</h3>
+        <div class="input-container">
+          <i class="fa fa-envelope icon customIcon"></i>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            class="box"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <i class="fa fa-lock icon customIcon"></i>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            class="box"
+            required
+          />
+        </div>
+        <p>Forgot your password? <a href="#">Click here</a></p>
+        <p>Don't have an account? <a href="#">Create now</a></p>
+        <input
+          type="submit"
+          value="Login Now"
+          class="btn"
+          onclick="validateForm(event)"
+        />
+      </form>
+
+      <!-- <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email"  placeholder="Enter your email" class="box">
+            <input type="password"  placeholder="Enter your password" class="box">
+            <p>forget your password<a href="#">click here</a></p>
+            <p>don't have an account<a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+    
+        </form> -->
+    </header>
+    <!-- header section End---------------------------------------------------------------------------->
+    <!-- Home section start -->
+
+    <section class="home" id="Home">
+      <div class="content">
+        <h3>fresh and <span>organic</span>Products for your</h3>
+        <p>
+          Aachi Masala, the pride of South India, brings you the richest and
+          most authentic spices and masalas. Renowned for our unmatched quality
+          and traditional flavors, we make every meal a celebration of South
+          Indian heritage.
+        </p>
+        <a href="#" class="btn">shop now</a>
+      </div>
+    </section>
+    <!-- Home section end -->
+    <!-- features section starts -->
+    <section class="features" id="Features">
+      <h1 class="heading">our<span>features</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./images/th.jpg" alt="" />
+          <h3>fresh and organic</h3>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <img src="./images/th (1).jpg" alt="" />
+          <h3>free delivery</h3>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <img src="./images/pay 99.png" alt="" />
+          <h3>Easy payment</h3>
+          <a href="#" class="btn">read more</a>
+        </div>
+      </div>
+    </section>
+    <!-- features section ends -->
+    <!-- products section starts -->
+    <section class="products" id="Products">
+      <h1 class="heading">our<span>products</span></h1>
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="./images/aachi-Cumin-Powder.webp" alt="1" />
+            <h3>fresh organic powders</h3>
+            <div class="price">$4.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./images/aachi-Idicha-Sambar-Powder.webp" alt="2" />
+            <h3>fresh organic powder</h3>
+            <div class="price">$4.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./images/aachi-Idly-Chilli-Powder-500g.webp" alt="3" />
+            <h3>fresh organic powder</h3>
+            <div class="price">$4.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./images/aachi-manjal-Powder.webp" alt="4" />
+            <h3>fresh organic powder</h3>
+            <div class="price">$4.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="./images/aachi-Chaat-Masala.webp" alt="5" />
+            <h3>fresh organic masala</h3>
+            <div class="price">$4.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./images/aachi-Fish-Fry-Masala.webp" alt="6" />
+            <h3>fresh organic masala</h3>
+            <div class="price">$4.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./images/aachi-Sabji-Masala.webp" alt="7" />
+            <h3>fresh organic masala</h3>
+            <div class="price">$4.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./images/Chicken-Masala-pocket.webp" alt="8" />
+            <h3>fresh organic masala</h3>
+            <div class="price">$4.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="./images/Tomato-Pickle-300g.webp" alt="1" />
+            <h3>fresh organic pickle</h3>
+            <div class="price">$4.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./images/Green-Chilli-Pickle.webp" alt="2" />
+            <h3>fresh organic pickle</h3>
+            <div class="price">$4.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./images/Gongura-Pickle.webp" alt="3" />
+            <h3>fresh organic pickle</h3>
+            <div class="price">$4.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./images/Mango-Ginger-Pickle.webp" alt="4" />
+            <h3>fresh organic pickle</h3>
+            <div class="price">$4.99/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- products section end-->
+
+    <!-- categories section starts -->
+    <section class="categores" id="categores">
+      <h1 class="heading">product<span>categores</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./images/spice stock mall.jpg" alt="1" />
+          <h3>powders</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop</a>
+        </div>
+
+        <div class="box">
+          <img src="./images/masala images.jpg" alt="" />
+          <h3>Masalas</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop</a>
+        </div>
+
+        <div class="box">
+          <img src="./images/pickel image.jpg" alt="3" />
+          <h3>pickles</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop</a>
+        </div>
+
+        <div class="box">
+          <img src="./images/images others.jpg" alt="4" />
+          <h3>Others</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop</a>
+        </div>
+      </div>
+    </section>
+    <!-- categories section starts -->
+    <!-- others starts -->
+    <section class="Others" id="Others">
+      <h1 class="heading">product<span>Others</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./images/Chemba-Puttu-powder.webp" alt="1" />
+          <h3>Chemba Puttu powder</h3>
+          <p>Rs. 60.00</p>
+          <a href="#" class="btn">Add To Cart</a>
+        </div>
+
+        <div class="box">
+          <img src="./images/aachi-Ragi-Vermicelli.webp" alt="2" />
+          <h3>Ragi Vermicelli</h3>
+          <p>Rs. 50.00</p>
+          <a href="#" class="btn">Add To Cart</a>
+        </div>
+
+        <div class="box">
+          <img src="./images/Vermicelli-multi-purpose.webp" alt="3" />
+          <h3>Vermicelli</h3>
+          <p>Rs. 40.00</p>
+          <a href="#" class="btn">Add To Cart</a>
+        </div>
+
+        <div class="box">
+          <img src="./images/yy.webp" alt="4" />
+          <h3>Ragi Flour</h3>
+          <p>Rs. 46.00</p>
+          <a href="#" class="btn">Add To Cart</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- othesr end -->
+    <!-- review section start -->
+    <section class="review" id="Review">
+      <h1 class="heading">customer<span>review</span></h1>
+
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="./images/gril.jpg" alt="" />
+            <p>
+              Aachi Masala, the pride of South India, brings you the richest and
+              most authentic spices and masalas.
+            </p>
+            <h3>john deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./images/boy.jpg" alt="" />
+            <p>
+              Aachi Masala, the pride of South India, brings you the richest and
+              most authentic spices and masalas.
+            </p>
+            <h3>john deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./images/grilap.jpg" alt="" />
+            <p>
+              Aachi Masala, the pride of South India, brings you the richest and
+              most authentic spices and masalas.
+            </p>
+            <h3>john deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./images/gril2.avif" alt="" />
+            <p>
+              Aachi Masala, the pride of South India, brings you the richest and
+              most authentic spices and masalas.
+            </p>
+            <h3>john deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./images/gril3.jpg" alt="" />
+            <p>
+              Aachi Masala, the pride of South India, brings you the richest and
+              most authentic spices and masalas.
+            </p>
+            <h3>john deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="./images/boy2.jpg" alt="" />
+            <p>
+              Aachi Masala, the pride of South India, brings you the richest and
+              most authentic spices and masalas.
+            </p>
+            <h3>john deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- review section end -->
+    <!-- footer section start -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3><i class="fa-solid fa-mortar-pestle"></i>Aachi</h3>
+          <p>
+            Aachi Masala, the pride of South India, brings you the richest and
+            most authentic spices and masalas.
+          </p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+        <div class="box">
+          <h3>Contact info</h3>
+          <a href="#" class="links"
+            ><i class="fa-solid fa-phone"></i>+789-455-888</a
+          >
+          <a href="#" class="links"
+            ><i class="fa-solid fa-phone"></i>+777-786-555</a
+          >
+          <a href="#" class="links"
+            ><i class="fa-solid fa-envelope"></i>sai@gmail.com</a
+          >
+          <a href="#" class="links"
+            ><i class="fa-solid fa-map-marker-alt"></i>puttur,india-200102</a
+          >
+        </div>
+        <div class="box">
+          <h3>quick link</h3>
+          <a href="#" class="links"
+            ><i class="fa-solid fa-arrow-right"></i>Home</a
+          >
+          <a href="#" class="links"
+            ><i class="fa-solid fa-arrow-right"></i>Features</a
+          >
+          <a href="#" class="links"
+            ><i class="fa-solid fa-arrow-right"></i>Products</a
+          >
+          <a href="#" class="links"
+            ><i class="fa-solid fa-arrow-right"></i>Categores</a
+          >
+          <a href="#" class="links"
+            ><i class="fa-solid fa-arrow-right"></i>Others</a
+          >
+          <a href="#" class="links"
+            ><i class="fa-solid fa-arrow-right"></i>Review</a
+          >
+        </div>
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>Subscribe for latest updates</p>
+          <input type="email" placeholder="Enter your email" class="email" />
+          <input type="submit" value="subscribe" class="btn" /><br />
+          <img src="./images/card.jpg" alt="" class="payment-img" />
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span>ms. web designer</span>| all rights reserved
+      </div>
+    </section>
+    <!-- footer section end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js file -->
+    <script src="./script/app.js"></script>
+  </body>
+</html>
